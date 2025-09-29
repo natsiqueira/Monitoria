@@ -1,61 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula-02</title>
-    <link rel="stylesheet" href="./Style.css">
-    </head>
-    <body>
-    <!-- <main>
-        <h1>Aula 2</h1>
+    <title>Desafio</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
 
-        <div id="header">Menu de navegação</div>
+    div {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+    }
+    
+    #divvermelha {
+        background-color: red;
+        bottom: 0;
+        left: 0;
+    }
 
-        <div id="nav">
-            <button>o globo</button>
-            <button>valor</button>
-            <button>ge</button>
-            <button>cartola</button>
-            <button>globoplay</button>
-        </div>
+    #divazul {
+        background-color: blue;
+        bottom: 0;
+        right: 0;
+    }
 
-        <nav>
-            <ul>
-                <li>o globo</li>
-                <li>valor</li>
-                <li>ge</li>
-                <li>cartola</li>
-                <li>globoplay</li>
-            </ul>
-        </nav>
-    </main>
+    #divverde {
+        background-color: green;
+        right: 0;
+        top: 0;
+    }
 
-    <aside> 
-        <footer>Final da página</footer>
-    </aside>
+    #divamarelo {
+        background-color: yellow;
+        top: 0;
+        left: 0;
+    }
 
-    <form>
-        <input type="text" placeholder="Digite seu email" required><br>
-        <input type="password" placeholder="Digite sua senha" required>
-        <br>
-        <input type="radio" name="genero" value="masculino" checked>Masculino
-        <input type="radio" name="genero" value="feminino" checked>Feminino
-        <button type="submit">Enviar</button>
-    </form> -->
+    #divpreto {
+        background-color: black;
+        /* top: calc(50% - 25px); */
+        /* left: calc(50% - 25px); */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-
-<div>
-    <h2 class="classeh2">Titulo com classe</h2>
-    <h2 id="idh2">Titulo com id</h2>
-    <h2>Titulo sem nada</h2>
-  </div>
-
-  <div class="classediv" id="iddivverde"></div>
-
-  <div class="classediv" id="iddivvermelho"></div>
-
-    </body>
-
-    </html>
+</style>
+<body>
+    <div id="divvermelha"></div>
+    <div id="divazul"></div>
+    <div id="divverde"></div>
+    <div id="divamarelo"></div>
+    <div id="divpreto"></div>
+</body>
+</html>
+<!-- 
+1 - [X] Fazer 5 quadrados
+2 - [X] Colocar 4 quadrados nos 4 cantos da tela
+3 - Colocar 1 quadrado no centro da tela
+4 - [X] Todos os quadrados com o mesmo tamanho
+5 - [X] Cada quadrado com uma cor
+6 - [X] Todos o 4 quadrados, colados nos cantos 
+-->
