@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acesso - Padaria do Wagner</title>
+    <style>
+      /*
+      =================================
+      1. ESTILO DO CORPO E IMAGEM DE FUNDO (PADARIA)
+      =================================
+      */
+      body {
+        /* Imagem de fundo de pães e croissants (URL do Unsplash) */
+        background: url('https://images.unsplash.com/photo-1542838792-c439169430c5?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+        /* Garante que a imagem cubra toda a tela */
+        background-size: cover;
+        margin: 0;
+        /* Fonte mais amigável, remetendo a algo artesanal ou de lanchonete */
+        font-family: 'Segoe Script', 'Comic Sans MS', cursive, sans-serif;
+        /* Uma cor de fonte de fallback para textos soltos */
+        color: #5d4037; /* Marrom escuro */
+      }
+      
+      /*
+      =================================
+      2. CONTAINER PRINCIPAL (O FORMULÁRIO)
+      =================================
+      */
+      .login-container {
+        /* Fundo branco leitoso, quase opaco, para destacar e simular farinha/leite */
+        background: rgba(255, 255, 255, 0.98);
+        width: 380px; /* Levemente maior que o original */
+        /* Centraliza verticalmente e horizontalmente na tela */
+        margin: 80px auto; 
+        padding: 40px 30px;
+        border-radius: 12px; /* Cantos mais arredondados */
+        /* Sombra suave com toque de marrom (cor de pão) */
+        box-shadow: 0 4px 20px rgba(100, 70, 50, 0.3);
+        text-align: center;
+        /* Fonte padrão dentro do container para melhor legibilidade */
+        font-family: Arial, sans-serif; 
+        border: 2px solid #a1887f; /* Borda fina para dar um toque de quadro */
+      }
+
+      /*
+      =================================
+      3. LOGO E TÍTULOS
+      =================================
+      */
+      .nome-padaria {
+        /* Cor de caramelo ou mel */
+        color: #e67e22; 
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        /* Fonte mais "escrita à mão" */
+        font-family: 'Segoe Script', 'Comic Sans MS', cursive, sans-serif;
+      }
+      .titulo-acesso {
+        /* Cor de chocolate ou café */
+        color: #5d4037; 
+        font-size: 2.5rem; /* Título maior */
+        margin-bottom: 30px;
+        font-weight: 900;
+        text-transform: uppercase;
+        /* Sombra de texto suave para dar profundidade */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      /*
+      =================================
+      4. CAMPOS DE FORMULÁRIO
+      =================================
+      */
+      .login-container label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-size: 1rem;
+        color: #5d4037; /* Marrom para combinar com o tema */
+        font-weight: bold;
+      }
+      .login-container input[type="text"],
+      .login-container input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0 20px 0; /* Espaçamento maior após o input */
+        /* Borda fina, cor de farinha/leite */
+        border: 1px solid #d7ccc8; 
+        border-radius: 6px;
+        font-size: 1.1rem;
+        /* Efeito de foco (hover) mais quente */
+        transition: border-color 0.3s;
+      }
+      .login-container input:focus {
+        border-color: #e67e22; /* Laranja ao focar */
+        outline: none; /* Remove o contorno padrão */
+      }
+
+      /*
+      =================================
+      5. BOTÃO E LINKS
+      =================================
+      */
+      .login-container button {
+        width: 100%;
+        /* Cor de pão recém-assado / laranja escuro */
+        background: #e67e22; 
+        color: #fff;
+        border: none;
+        padding: 12px;
+        border-radius: 6px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 15px;
+        /* Transição para o efeito hover */
+        transition: background 0.3s ease;
+        text-transform: uppercase;
+      }
+      .login-container button:hover {
+        /* Cor de hover mais escura */
+        background: #d35400; 
+      }
+      
+      /* Link "Esqueceu sua senha?" */
+      .login-container .esqueci {
+        display: block;
+        margin-top: 20px;
+        color: #e67e22; /* Cor principal de destaque */
+        font-size: 1rem;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .login-container .esqueci:hover {
+        color: #d35400; /* Cor de hover */
+        text-decoration: underline;
+      }
+
+      /* Checkbox de manter conectado */
+      .manter-conectado {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .manter-conectado label {
+          font-weight: normal; /* Normaliza o peso da fonte para este label */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="nome-padaria">Padaria Artesanal</div>
+      
+      <div class="titulo-acesso">Wagner Cardoso</div>
+      
+      <form>
+        <label for="usuario">Usuário (Funcionário)</label>
+        <input type="text" id="usuario" placeholder="Seu nome de usuário" />
+        
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Sua senha secreta" />
+        
+        <div class="manter-conectado">
+          <input type="checkbox" id="manter" />
+          <label for="manter" style="margin:0;">Manter conectado</label>
+        </div>
+        
+        <button type="submit">Acessar Painel</button>
+        
+        <a href="#" class="esqueci">Precisa de ajuda com o acesso?</a>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Quadrados nos cantos e 1 no Centro</title>
+    
+    <style>
+        
+        body {
+            /* Define a altura do body para ocupar 100% da altura da viewport (tela visível) */
+            height: 100vh;
+            /* Remove as margens padrão do body para garantir que os quadrados toquem os cantos */
+            margin: 0;
+            /* Usa o Flexbox para facilmente centralizar o conteúdo (o quadrado 5) */
+            display: flex;
+            /* Alinha o item na horizontal (centro) */
+            justify-content: center;
+            /* Alinha o item na vertical (centro) */
+            align-items: center;
+            /* Define a posição como 'relative' para que os quadrados dos cantos
+               possam ser posicionados de forma absoluta em relação ao body. */
+            position: relative;
+            /* Garante que o body ocupe toda a largura */
+            width: 100vw;
+            /* Opcional: cor de fundo da tela para destacar os quadrados */
+            background-color: #f0f0f0; 
+        }
+
+        /*
+        =================================
+        2. ESTILO PADRÃO DOS QUADRADOS
+        =================================
+        */
+        .quadrado {
+            /* Define o mesmo tamanho para todos os quadrados: 100px por 100px */
+            width: 100px;
+            height: 100px;
+            /* Adiciona uma sombra suave para dar um efeito 3D (opcional) */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /*
+        =================================
+        3. POSICIONAMENTO DOS QUADRADOS NOS CANTOS
+        =================================
+        */
+        /* Usa 'absolute' para posicionar os quadrados em relação ao <body> (que é 'relative') */
+        .canto {
+            position: absolute;
+        }
+
+        /* Quadrado 1: Canto Superior Esquerdo (colado no topo e na esquerda) */
+        #q1 {
+            top: 0;
+            left: 0;
+            background-color: #FF5733; /* Vermelho */
+        }
+
+        /* Quadrado 2: Canto Superior Direito (colado no topo e na direita) */
+        #q2 {
+            top: 0;
+            right: 0;
+            background-color: #33FF57; /* Verde */
+        }
+
+        /* Quadrado 3: Canto Inferior Esquerdo (colado na parte de baixo e na esquerda) */
+        #q3 {
+            bottom: 0;
+            left: 0;
+            background-color: #3357FF; /* Azul */
+        }
+
+        /* Quadrado 4: Canto Inferior Direito (colado na parte de baixo e na direita) */
+        #q4 {
+            bottom: 0;
+            right: 0;
+            background-color: #FF33A1; /* Rosa */
+        }
+
+        /*
+        =================================
+        4. ESTILO E POSICIONAMENTO DO QUADRADO CENTRAL
+        =================================
+        */
+        /* O quadrado central já está posicionado automaticamente no centro
+           pelas propriedades 'display: flex', 'justify-content: center' e 'align-items: center'
+           que definimos no <body>. */
+        #                                                          -
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado canto" id="q1"></div>
+    <div class="quadrado canto" id="q2"></div>
+    <div class="quadrado canto" id="q3"></div>
+    <div class="quadrado canto" id="q4"></div>
+
+    <div class="quadrado" id="q5"></div>
+</body>
+</html>

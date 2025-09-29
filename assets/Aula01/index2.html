@@ -1,0 +1,143 @@
+<!DOCTYPE html> <!-- Diz ao navegador que este é um documento HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+  <meta charset="UTF-8"> <!-- Define o padrão de caracteres (UTF-8 é universal, aceita acentos, etc) -->
+  <title>Site da Nat</title> <!-- Nome que aparece na aba do navegador -->
+</head>
+<body> <!-- Onde todo o conteúdo visível da página vai ficar -->
+
+  <!-- Cabeçalho -->
+  <h1>Bem-vindo ao meu site ✨</h1> <!-- Título principal (h1 = mais importante) -->
+  <p>Oi! Eu sou a Nat, futura desenvolvedora Frontend 🚀. Essa é a minha primeira página HTML.</p> <!-- Parágrafo simples -->
+
+  <!-- Links -->
+  <div> <!-- Div serve para agrupar elementos -->
+    <!-- Link interno para âncora dentro da mesma página -->
+    <a href="#contato">Ir para Contato (âncora interna)</a> |
+    <!-- Link externo para outro site -->
+    <a href="https://www.nytimes.com/" target="_blank">Site de Notícias</a> |
+    <!-- Link externo para rede social -->
+    <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+    <!-- Link para outra página HTML -->
+    <a href="sobre.html">Página Sobre</a>
+  </div>
+
+  <hr> <!-- Linha horizontal de separação -->
+
+  <!-- Listas -->
+  <h2>Coisas que eu gosto</h2>
+  <ol> <!-- Lista ordenada (numerada) -->
+    <li>Filmes </li>
+    <li>Café </li>
+    <li>Música </li>
+  </ol>
+
+  <ul> <!-- Lista não ordenada (com bolinhas) -->
+    <li>Frontend</li>
+    <li>Backend</li>
+    <li>QA</li>
+  </ul>
+
+  <!-- Imagem -->
+  <h2>Minha foto favorita</h2>
+  <img src="https://placekitten.com/300/200" alt="Um gatinho fofo"> <!-- src = link da imagem | alt = texto alternativo -->
+
+  <!-- Inputs e Botões -->
+  <h2>Teste de Inputs</h2>
+  <input type="text" placeholder="Digite seu nome"> <!-- Caixa de texto -->
+  <input type="email" placeholder="Digite seu email"> <!-- Caixa de texto só para e-mail -->
+  <button>Enviar</button> <!-- Botão -->
+
+  <!-- Div para agrupar -->
+  <div>
+    <h2>Minha Tabela</h2>
+    <!-- Tabela -->
+    <table border="1"> <!-- border=1 coloca borda na tabela -->
+      <tr> <!-- Linha da tabela -->
+        <th>Nome</th> <!-- th = cabeçalho da coluna -->
+        <th>Idade</th>
+        <th>Cidade</th>
+      </tr>
+      <tr>
+        <td>Nat</td> <!-- td = célula da tabela -->
+        <td>24</td>
+        <td>Petrópolis</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>22</td>
+        <td>Rio</td>
+      </tr>
+      <tr>
+        <td>Lucas</td>
+        <td>30</td>
+        <td>São Paulo</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Vídeo -->
+  <h2>Um vídeo</h2>
+  <video width="320" controls> <!-- controls adiciona play/pause -->
+    <source src="video.mp4" type="video/mp4"> <!-- Caminho do vídeo -->
+    Seu navegador não suporta vídeo.
+  </video>
+
+  <!-- Áudio -->
+  <h2>Uma música</h2>
+  <audio controls> <!-- controls adiciona botões de play/pause -->
+    <source src="musica.mp3" type="audio/mp3"> <!-- Caminho do áudio -->
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <!-- Formulário -->
+  <h2>Formulário de Contato</h2>
+  <form> <!-- Início do formulário -->
+    <label>Nome:</label> <!-- Rótulo do campo -->
+    <input type="text" name="nome" required><br><br> <!-- Campo obrigatório -->
+
+    <label>Email:</label>
+    <input type="email" name="email" required><br><br>
+
+    <label>Sexo:</label><br>
+    <!-- Botões do tipo radio (apenas uma opção pode ser escolhida) -->
+    <input type="radio" name="sexo" value="feminino"> Feminino
+    <input type="radio" name="sexo" value="masculino"> Masculino
+    <input type="radio" name="sexo" value="outro"> Outro<br><br>
+
+    <label>Interesses:</label><br>
+    <!-- Checkbox (pode marcar mais de uma opção) -->
+    <input type="checkbox" name="html"> HTML
+    <input type="checkbox" name="css"> CSS
+    <input type="checkbox" name="js"> JavaScript<br><br>
+
+    <button type="submit">Enviar</button> <!-- Botão para enviar formulário -->
+  </form>
+
+  <!-- Galeria -->
+  <h2>Minha Galeria</h2>
+  <div>
+    <!-- Três imagens lado a lado -->
+    <img src="https://placekitten.com/200/200" alt="gatinho 1">
+    <img src="https://placekitten.com/201/200" alt="gatinho 2">
+    <img src="https://placekitten.com/202/200" alt="gatinho 3">
+  </div>
+
+  <!-- Ícones sociais -->
+  <h2>Minhas redes sociais</h2>
+  <div>
+    <!-- Ícone como link -->
+    <a href="https://www.instagram.com/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="30">
+    </a>
+    <a href="https://github.com/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="30">
+    </a>
+  </div>
+
+  <!-- Âncora -->
+  <h2 id="contato">Contato</h2> <!-- id cria um marcador (âncora) -->
+  <p>Se quiser falar comigo, me chama no formulário acima 👆</p>
+
+</body>
+</html>

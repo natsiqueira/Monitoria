@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Serratec</title>
+    <style>
+      body {
+        background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .login-container {
+        background: rgba(255,255,255,0.95);
+        width: 350px;
+        margin: 60px auto;
+        padding: 32px 24px;
+        border-radius: 8px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+        text-align: center;
+      }
+      .logo-serratec {
+        font-size: 1.1rem;
+        color: #b71c1c;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 4px;
+      }
+      .titulo-contabilidade {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 24px;
+        font-weight: bold;
+      }
+      .login-container input[type="text"],
+      .login-container input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0 16px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+      .login-container button {
+        width: 100%;
+        background: #b71c1c;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-top: 8px;
+      }
+      .login-container button:hover {
+        background: #a31515;
+      }
+      .login-container .esqueci {
+        display: block;
+        margin-top: 12px;
+        color: #b71c1c;
+        font-size: 0.95rem;
+        text-decoration: none;
+      }
+      .login-container label {
+        display: block;
+        text-align: left;
+        margin-bottom: 4px;
+        font-size: 0.98rem;
+        color: #444;
+      }
+      .manter-conectado {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .manter-conectado input {
+        margin-right: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="logo-serratec">serratec</div>
+      <div class="titulo-contabilidade">Contabilidade</div>
+      <form>
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" placeholder="Digite seu usuário" />
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Digite sua senha" />
+        <div class="manter-conectado">
+          <input type="checkbox" id="manter" />
+          <label for="manter" style="margin:0;">Manter conectado</label>
+        </div>
+        <button type="submit">Entrar</button>
+        <a href="#" class="esqueci">Esqueceu sua senha?</a>
+      </form>
+    </div>
+  </body>
+</html>
